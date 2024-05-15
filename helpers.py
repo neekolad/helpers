@@ -20,5 +20,20 @@ def resize_pictures(org_folder, resized_folder):
 
 # resize_pictures("images", "resized")
 
+# time echo
+import datetime
+def techo(s):
+    dt = datetime.datetime.now()
+    dt_clean = dt.strftime("%d-%m-%Y %H:%M:%S")
+    return print("[" + dt_clean + "] " + str(s))
 
 
+# random sleep, randomly take number between a and b, with print
+# handle situation if the first number is bigger than the other
+# handle situation if the number a and b are equal
+import random
+import time
+def random_sleep(a,b):
+    rnd = random.randint(a,b)
+    techo(f"Sleeping for {rnd} seconds..")
+    time.sleep(rnd)

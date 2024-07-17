@@ -37,3 +37,11 @@ def random_sleep(a,b):
     rnd = random.randint(a,b)
     techo(f"Sleeping for {rnd} seconds..")
     time.sleep(rnd)
+
+
+# time the process
+from datetime import datetime
+t1 = datetime.now()
+# your function here
+t2 = datetime.now()
+print('Took {} Seconds'.format(t2 - t1))
